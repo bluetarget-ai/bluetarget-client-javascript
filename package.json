@@ -1,10 +1,10 @@
 {
-  "name": "bluetarget-client",
-  "description": "SDK for NodeJs + Typescript",
-  "main": "dist/index.ts",
+  "name": "bluetarget",
+  "description": "A fully-featured and blazing-fast JavaScript API client to interact with BlueTarget.",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "bluetarget",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "build": "tsc"
@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/admin-aibridge/ai-bridge.sdk.nodejs.git"
+    "url": "git://github.com/bluetarget-ai/bluetarget-client-javascript.git"
   },
   "files": [
     "dist/**/*"
@@ -29,9 +29,9 @@
     "typescript": "^4.5.4"
   },
   "bugs": {
-    "url": "https://github.com/admin-aibridge/ai-bridge.sdk.nodejs/issues"
+    "url": "https://github.com/bluetarget-ai/bluetarget-client-javascript/issues"
   },
-  "homepage": "https://github.com/admin-aibridge/ai-bridge.sdk.nodejs#readme",
+  "homepage": "https://github.com/bluetarget-ai/bluetarget-client-javascript#readme",
   "dependencies": {
     "form-data": "^4.0.0",
     "node-fetch": "^2.6.7"
@@ -39,6 +39,7 @@
   "keywords": [
     "machine learning",
     "sdk",
-    "client"
+    "client",
+    "bluetarget"
   ]
 }

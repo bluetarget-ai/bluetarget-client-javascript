@@ -1,4 +1,4 @@
-import { ApiConnector } from '../helpers/api-connector';
+import { ApiConnector } from '../lib/api-connector';
 
 type PredictResponse = number[] | string[];
 
