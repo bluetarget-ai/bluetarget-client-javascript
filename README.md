@@ -1,5 +1,13 @@
 ## Bluetarget for JavaScript
 
+## About BlueTarget
+
+Bluetarget is a platform to help you on the entire process of building machine learning algorithms and predicting outcomes, packed in one single click.
+
+Set up your account and start to build your Machine Learning models at Scale
+
+[Click here](https://bluetarget.ai/)
+
 ## ✨ Features
 
 - Thin & **minimal low-level HTTP client** to interact with BlueTarget's API
