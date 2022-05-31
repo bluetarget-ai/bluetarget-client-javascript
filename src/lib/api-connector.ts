@@ -1,6 +1,6 @@
 import fetch, { BodyInit, Response } from 'node-fetch';
 
-const __AI_BRIDGE_API_URL = 'https://api.ai-bridge.co';
+const __AI_BRIDGE_API_URL = 'https://api.bluetarget.ai';
 
 interface Headers {
   [key: string]: any;
