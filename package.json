@@ -7,7 +7,7 @@
   "version": "1.0.3",
   "private": false,
   "scripts": {
-    "deploy": "tsc & npm publish"
+    "publish": "tsc & npm publish"
   },
   "license": "MIT",
   "repository": {
