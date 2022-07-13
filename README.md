@@ -53,14 +53,37 @@ model
   });
 ```
 
+Example of forecasting inference:
+
+```js
+const bluetarget = require('bluetarget');
+
+const client = new bluetarget.Client('API_KEY', 'API_SECRET');
+const model = client.model('MODEL_NAME');
+
+const params = {
+  start: '2022-07-20 00:00:00',
+  periods: 12,
+};
+
+model
+  .forecast(params)
+  .then((output) => {
+    console.log(output);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
 Finally, let's actually adding data using the `addItem` method:
 
 ```js
 const client = new bluetarget.Client('API_KEY', 'API_SECRET');
 
-const datase = aibridge.dataset('DATASET_ID');
+const dataset = bluetarget.dataset('DATASET_ID');
 
-datase
+dataset
   .addItems([
     {
       ID: 464942,

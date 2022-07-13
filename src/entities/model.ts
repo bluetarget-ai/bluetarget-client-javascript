@@ -2,6 +2,18 @@ import { ApiConnector } from '../lib/api-connector';
 
 type PredictResponse = number[] | string[];
 
+interface ForecastParameters {
+  start: string;
+  periods: number;
+}
+
+interface ForecastItemResponse {
+  date: string;
+  y: number;
+}
+
+type ForecastResponse = ForecastItemResponse[];
+
 export class Model extends ApiConnector {
   protected name: string;
   protected id: string;
@@ -21,6 +33,18 @@ export class Model extends ApiConnector {
 
     if (response.status === 200) {
       return body as PredictResponse;
+    }
+
+    throw new Error(JSON.stringify(body));
+  }
+
+  public async forecast(params: ForecastParameters): Promise<ForecastResponse> {
+    const response = await this.post(`model/${this.name}/forecast`, params);
+
+    const body = await response.json();
+
+    if (response.status === 200) {
+      return body as ForecastResponse;
     }
 
     throw new Error(JSON.stringify(body));
